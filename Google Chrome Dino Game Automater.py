@@ -1,6 +1,6 @@
-from PIL import Image, ImageGrab
-import pyautogui
-import time
+from PIL import Image, ImageGrab            # -----This project is inspired/learned and the values you will see below are done on the calculation/Hit and trial---------
+import pyautogui                            # on full screen mode gameplay of Dino Game by the 'CodeWithHarry' Youtube Channel. Do check out his channel to learn in detail 
+import time                                 # --------------------------about this project and some other cool learning videos-----------------------------------------
 
 def press(key):
     pyautogui.keyDown(key)
@@ -8,12 +8,12 @@ def press(key):
 
 def isCollide(data):
     for i in range(300, 415):
-        for j in range(410, 563):   #here we are making a rectange to catch up the bird
+        for j in range(410, 563):   #here we are making a rectangle to catch up the bird
             if data[i, j] < 100:    #change the values according to game screensize in your pc 
                 press("down")          
-                return              
-
-#TO CHANGE THE VALUES AND SEE IF YOU ARE DOING IT RIGHT USE THE BELOW FOP LOOP TAKE SCREENSHOT OF YOUR RECTANGLE
+                return             
+            
+#TO CHANGE THE VALUES AND SEE IF YOU ARE DOING IT RIGHT USE THE BELOW FOR LOOP TO TAKE SCREENSHOT OF YOUR RECTANGLE
                 '''
                   for i in range(275, 325):
                      for j in range(563, 650):
